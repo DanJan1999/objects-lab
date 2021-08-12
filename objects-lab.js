@@ -321,7 +321,7 @@ var user = {
           this.mileage = mileage;
       }
       move(miles) {
-          return this.mileage + miles
+          return this.mileage = this.mileage + miles
           console.log(this.mileage)
       }
   };
@@ -334,6 +334,7 @@ var user = {
   
   let myFirstVehicle = new  Vehicle (6, `Black`, 15000);
   console.log(myFirstVehicle.move(10000));
+  console.log(myFirstVehicle);
 
   /* 
     Now we'll create a class that's based off of the vehicle class. 
@@ -440,3 +441,5 @@ var user = {
  console.log(speedBoat);
 
  speedBoat.checkSeaWorthiness();
+
+ 
